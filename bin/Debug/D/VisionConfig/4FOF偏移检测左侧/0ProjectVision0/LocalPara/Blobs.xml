@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<St_BlobLocalParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Count>1</Count>
+  <InspectRois>
+    <RectangleF>
+      <Location>
+        <X>1321</X>
+        <Y>1460</Y>
+      </Location>
+      <Size>
+        <Width>400</Width>
+        <Height>189</Height>
+      </Size>
+      <X>1321</X>
+      <Y>1460</Y>
+      <Width>400</Width>
+      <Height>189</Height>
+    </RectangleF>
+  </InspectRois>
+  <MinGrays>
+    <int>148</int>
+  </MinGrays>
+  <MaxGrays>
+    <int>255</int>
+  </MaxGrays>
+  <AreaMins>
+    <int>100</int>
+  </AreaMins>
+  <PixelSize>0.0008</PixelSize>
+  <AreaMaxs>
+    <int>2343774</int>
+  </AreaMaxs>
+</St_BlobLocalParam>

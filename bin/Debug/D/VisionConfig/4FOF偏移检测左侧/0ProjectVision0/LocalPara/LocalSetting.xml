@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<LocalSettingPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <localModel>Temp</localModel>
+  <SearchAreaX>1017</SearchAreaX>
+  <SearchAreaY>960</SearchAreaY>
+  <SearchWidth>1154</SearchWidth>
+  <SearchHeight>980</SearchHeight>
+  <GrabPosTeach>
+    <x>159.029</x>
+    <y>52.639</y>
+    <angle>-1.671</angle>
+  </GrabPosTeach>
+  <TeachImgLocal>
+    <Row>557.10444475934207</Row>
+    <Col>2293.2490511483529</Col>
+    <Angle>-0.011809081479454116</Angle>
+  </TeachImgLocal>
+  <TeachCoordi>Coordi4</TeachCoordi>
+  <CoordiCam>Coordi0Cam0</CoordiCam>
+  <Offset_x_range>0.05</Offset_x_range>
+  <Offset_y_range>0.05</Offset_y_range>
+  <Offset_theta_range>1</Offset_theta_range>
+  <Offset_x>1.122</Offset_x>
+  <Offset_y>-0.2403</Offset_y>
+  <Offset_theta>0</Offset_theta>
+  <PixelSize>1</PixelSize>
+</LocalSettingPara>

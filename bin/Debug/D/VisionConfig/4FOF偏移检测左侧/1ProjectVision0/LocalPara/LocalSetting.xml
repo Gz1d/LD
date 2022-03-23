@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<LocalSettingPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <localModel>TempBlob</localModel>
+  <SearchAreaX>853</SearchAreaX>
+  <SearchAreaY>964</SearchAreaY>
+  <SearchWidth>1354</SearchWidth>
+  <SearchHeight>1010</SearchHeight>
+  <GrabPosTeach>
+    <x>159.029</x>
+    <y>52.639</y>
+    <angle>-1.671</angle>
+  </GrabPosTeach>
+  <TeachImgLocal>
+    <Row>939.92699802436618</Row>
+    <Col>1992.6244821114394</Col>
+    <Angle>0.0018080859838610381</Angle>
+  </TeachImgLocal>
+  <TeachCoordi>Coordi4</TeachCoordi>
+  <CoordiCam>Coordi0Cam0</CoordiCam>
+  <Offset_x_range>0.05</Offset_x_range>
+  <Offset_y_range>0.05</Offset_y_range>
+  <Offset_theta_range>1</Offset_theta_range>
+  <Offset_x>1.119</Offset_x>
+  <Offset_y>-0.2253</Offset_y>
+  <Offset_theta>0</Offset_theta>
+  <PixelSize>1</PixelSize>
+</LocalSettingPara>

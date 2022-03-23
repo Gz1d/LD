@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfCameraPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CameraPara>
+    <TriggerModel>false</TriggerModel>
+    <IsMirrorX>false</IsMirrorX>
+    <IsMirrorY>false</IsMirrorY>
+    <IsRot>false</IsRot>
+    <CameraName>Cam0</CameraName>
+    <CameInterface>HalconGigeE</CameInterface>
+    <CamDecribe>上相机</CamDecribe>
+    <IsActive>false</IsActive>
+    <IsOpen>false</IsOpen>
+    <Width>8192</Width>
+    <Height>1000</Height>
+    <ServerName> hh</ServerName>
+    <DeviceName>JJJH</DeviceName>
+    <CcfPath>hhhefe</CcfPath>
+  </CameraPara>
+</ArrayOfCameraPara>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390DE2D1-B8C9-4911-A67E-8861B018D8E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisionBase</RootNamespace>
+    <AssemblyName>VisionBase</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Basler.Pylon, Version=1.2.0.0, Culture=neutral, PublicKeyToken=e389355f398382ab, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PinAoi\bin\Debug\Basler.Pylon.dll</HintPath>
+    </Reference>
+    <Reference Include="DALSA.SaperaLT.SapClassBasic, Version=8.60.0.2120, Culture=neutral, PublicKeyToken=4d8604101dcb6b58, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PinAoi\bin\Debug\DALSA.SaperaLT.SapClassBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>C:\Program Files\MVTec\HALCON-18.11-Steady\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="MENTO_CONTROLLER, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MENTO_CONTROLLER.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VMControls.Winform.Release">
+      <HintPath>D:\Program Files\VisionMaster_EDU4.0.0\Applications\myLibs\VMControls.Winform.Release.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\TempPara.cs" />
+    <Compile Include="FrmAutoFocus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoFocus.Designer.cs">
+      <DependentUpon>FrmAutoFocus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs" />
+    <Compile Include="CameraTest.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Matching\MatchingAssistant.cs" />
+    <Compile Include="Matching\MatchingModule.cs" />
+    <Compile Include="Matching\MatchingParam.cs" />
+    <Compile Include="Matching\MatchingResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WordLightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordLightForm.Designer.cs">
+      <DependentUpon>WordLightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="参数配置\CirclesParam.cs" />
+    <Compile Include="参数配置\ImageSetting.cs" />
+    <Compile Include="参数配置\LinesParamam.cs" />
+    <Compile Include="参数配置\TemplateParam.cs" />
+    <Compile Include="参数配置\VisionStruct.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi1.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi0.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi2.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi3.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi4.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi5.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi6.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi7.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi8.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionCoordi9.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionManager.cs" />
+    <Compile Include="图像处理流程\DoProductProcess.cs" />
+    <Compile Include="图像处理流程\DoVisionProcess\BlobFofVisionProcess.cs" />
+    <Compile Include="图像处理流程\DoVisionProcess\DoUpDnVisionProcess.cs" />
+    <Compile Include="图像处理流程\DoVisionProcess\DoFofVisionProcess.cs" />
+    <Compile Include="图像处理流程\DoVisionProcess\DoVisionProcess.cs" />
+    <Compile Include="图像处理流程\Calibration\EyeToHandPos.cs" />
+    <Compile Include="图像处理流程\InspectBase.cs" />
+    <Compile Include="图像处理流程\InspectControl.cs" />
+    <Compile Include="图像处理流程\Local\BlobLineCirRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\BlobLocal.cs" />
+    <Compile Include="图像处理流程\Local\BlobTempLocal.cs" />
+    <Compile Include="图像处理流程\Local\BlobTwoLineLocal.cs" />
+    <Compile Include="图像处理流程\Local\FourLineLocal.cs" />
+    <Compile Include="图像处理流程\Local\LineCircleLocal.cs" />
+    <Compile Include="图像处理流程\Local\LineCircleRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\LineLocalLineCirRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\LocalBase.cs" />
+    <Compile Include="图像处理流程\Local\LocalManager.cs" />
+    <Compile Include="图像处理流程\Local\OneCircle.cs" />
+    <Compile Include="图像处理流程\Local\TempBlobLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempFourLineLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempLineCircleLocalLinCirRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\TempLineCirLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempLocalLineCircRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\TempOneCircleLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempTwoCircleLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempTwoCircleLocalLineCirRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\TempTwoLineLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempLocal.cs" />
+    <Compile Include="图像处理流程\Local\TempTwoLineLocalLineCirRectInsp.cs" />
+    <Compile Include="图像处理流程\Local\TwoCycleLocal.cs" />
+    <Compile Include="图像处理流程\Local\TwoLineLocal.cs" />
+    <Compile Include="图片显示\DisplaySystem.cs" />
+    <Compile Include="图片显示\FrmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="图片显示\FrmView.designer.cs">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="图片显示\ViewControl.cs" />
+    <Compile Include="图像处理流程\Calibration\Motion\MotionBase.cs" />
+    <Compile Include="新参数配置\CaliParam.cs" />
+    <Compile Include="新参数配置\CaliParaManager.cs" />
+    <Compile Include="新参数配置\CameraLightPara.cs" />
+    <Compile Include="新参数配置\Configuration.cs" />
+    <Compile Include="新参数配置\LocalPara.cs" />
+    <Compile Include="新参数配置\LocalSettingPara.cs" />
+    <Compile Include="新参数配置\ProjectPara.cs" />
+    <Compile Include="新参数配置\ProjectParaManager.cs" />
+    <Compile Include="新参数配置\Com\Serializition.cs" />
+    <Compile Include="新参数配置\Com\TestPara.cs" />
+    <Compile Include="新参数配置\Ui\FrmAxisMotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmAxisMotion.Designer.cs">
+      <DependentUpon>FrmAxisMotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCali9PtPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCali9PtPara.Designer.cs">
+      <DependentUpon>FrmCali9PtPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliPara.Designer.cs">
+      <DependentUpon>FrmCaliPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliParaManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliParaManager.Designer.cs">
+      <DependentUpon>FrmCaliParaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCamLightCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\.Designer.cs">
+      <DependentUpon>FrmCamLightCtrl.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliUpDnCam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmCaliUpDnCam.Designer.cs">
+      <DependentUpon>FrmCaliUpDnCam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmVisionProjectPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\Ui\FrmVisionProjectPara.Designer.cs">
+      <DependentUpon>FrmVisionProjectPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\VisionPara.cs" />
+    <Compile Include="新参数配置\光源\FrmLightCrlManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\光源\FrmLightCrlManager.Designer.cs">
+      <DependentUpon>FrmLightCrlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新参数配置\光源\LightCrlParaItem.cs" />
+    <Compile Include="新参数配置\光源\LightCrlParaManager.cs" />
+    <Compile Include="新参数配置\光源\LightCtrlBase.cs" />
+    <Compile Include="新参数配置\光源\LightCtrlManager.cs" />
+    <Compile Include="新参数配置\光源\LightCtrlMT.cs" />
+    <Compile Include="新参数配置\光源\LightCtrlWordp.cs" />
+    <Compile Include="新参数配置\相机\CameraBase.cs" />
+    <Compile Include="新参数配置\相机\CameraBasler.cs" />
+    <Compile Include="新参数配置\相机\CameraCLDalsa.cs" />
+    <Compile Include="新参数配置\相机\CameraCtrl.cs" />
+    <Compile Include="新参数配置\相机\CameraHMV3.cs" />
+    <Compile Include="新参数配置\相机\CameraPara.cs" />
+    <Compile Include="新参数配置\相机\CameraParaManger.cs" />
+    <Compile Include="新参数配置\相机\CameraPylon.cs" />
+    <Compile Include="新参数配置\相机\CameraSaperaLT.cs" />
+    <Compile Include="新参数配置\相机\FrmCameraManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新参数配置\相机\FrmCameraManager.Designer.cs">
+      <DependentUpon>FrmCameraManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉算法库\BlobInspect.cs" />
+    <Compile Include="视觉算法库\CircleTypePos.cs" />
+    <Compile Include="视觉算法库\LineTypePos.cs" />
+    <Compile Include="视觉算法库\PinInsepct.cs" />
+    <Compile Include="视觉算法库\VisionBase.cs" />
+    <Compile Include="视觉算法库\VsionStruct.cs" />
+    <Compile Include="视觉调试\FrmLocalParaTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\FrmLocalParaTeach.Designer.cs">
+      <DependentUpon>FrmLocalParaTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmBlobLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmBlobLocal.designer.cs">
+      <DependentUpon>SubFrmBlobLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFindCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFindCircle.Designer.cs">
+      <DependentUpon>SubFrmFindCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmPinInspect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmPinInspect.designer.cs">
+      <DependentUpon>SubFrmPinInspect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFindLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFindLine.designer.cs">
+      <DependentUpon>SubFrmFindLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmFinish.Designer.cs">
+      <DependentUpon>SubFrmFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmRecheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmRecheck.designer.cs">
+      <DependentUpon>SubFrmRecheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="视觉调试\SubFrmTemplate.Designer.cs">
+      <DependentUpon>SubFrmTemplate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAutoFocus.resx">
+      <DependentUpon>FrmAutoFocus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordLightForm.resx">
+      <DependentUpon>WordLightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="图片显示\FrmView.resx">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmAxisMotion.resx">
+      <DependentUpon>FrmAxisMotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmCali9PtPara.resx">
+      <DependentUpon>FrmCali9PtPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmCaliPara.resx">
+      <DependentUpon>FrmCaliPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmCaliParaManager.resx">
+      <DependentUpon>FrmCaliParaManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmCamLightCtrl.resx">
+      <DependentUpon>FrmCamLightCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmCaliUpDnCam.resx">
+      <DependentUpon>FrmCaliUpDnCam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\Ui\FrmVisionProjectPara.resx">
+      <DependentUpon>FrmVisionProjectPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\光源\FrmLightCrlManager.resx">
+      <DependentUpon>FrmLightCrlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新参数配置\相机\FrmCameraManager.resx">
+      <DependentUpon>FrmCameraManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\FrmLocalParaTeach.resx">
+      <DependentUpon>FrmLocalParaTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmBlobLocal.resx">
+      <DependentUpon>SubFrmBlobLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmFindCircle.resx">
+      <DependentUpon>SubFrmFindCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmPinInspect.resx">
+      <DependentUpon>SubFrmPinInspect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmFindLine.resx">
+      <DependentUpon>SubFrmFindLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmFinish.resx">
+      <DependentUpon>SubFrmFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmRecheck.resx">
+      <DependentUpon>SubFrmRecheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="视觉调试\SubFrmTemplate.resx">
+      <DependentUpon>SubFrmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileLib\FileLib.csproj">
+      <Project>{7d81ef29-ba88-432c-8401-a96e060891ea}</Project>
+      <Name>FileLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LD\LD.csproj">
+      <Project>{eb1e84be-870f-4efd-80aa-b3ac4c7f5ed5}</Project>
+      <Name>LD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewROI\ViewROI.csproj">
+      <Project>{024dbe3d-8923-4c2e-bd26-9121d08587ad}</Project>
+      <Name>ViewROI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CaliParam.datasource" />
+    <None Include="Properties\DataSources\CameraPara.datasource" />
+    <None Include="Properties\DataSources\LD.Config.PlcTypeItem.datasource" />
+    <None Include="Properties\DataSources\LightCrlParaItem.datasource" />
+    <None Include="Properties\DataSources\LightPara.datasource" />
+    <None Include="Properties\DataSources\MyHomMat2D.datasource" />
+    <None Include="Properties\DataSources\TempLineCirLocal.datasource" />
+    <None Include="Properties\DataSources\VisionBase.Config.TempParaItem.datasource" />
+    <None Include="Properties\DataSources\VisionBase.Config.TestPara.datasource" />
+    <None Include="Properties\DataSources\VisionBase.Matching.MatchingModule.datasource" />
+    <None Include="Properties\DataSources\VisionPara.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_rotate.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

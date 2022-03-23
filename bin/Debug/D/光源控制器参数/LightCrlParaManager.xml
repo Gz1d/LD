@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<LightCrlParaManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LightCtrParaItems>
+    <LightCrlParaItem>
+      <PortName>COM2</PortName>
+      <BaudRate>115200</BaudRate>
+      <StopBits>One</StopBits>
+      <Parity>None</Parity>
+      <DataBits>8</DataBits>
+      <IsConnect>true</IsConnect>
+      <IsActive>true</IsActive>
+      <Describe />
+      <IsHex>true</IsHex>
+      <LightCtrlType>MengT</LightCtrlType>
+      <LightCtrlName>LightCtrl0</LightCtrlName>
+    </LightCrlParaItem>
+    <LightCrlParaItem>
+      <PortName>COM3</PortName>
+      <BaudRate>115200</BaudRate>
+      <StopBits>One</StopBits>
+      <Parity>None</Parity>
+      <DataBits>8</DataBits>
+      <IsConnect>true</IsConnect>
+      <IsActive>true</IsActive>
+      <Describe />
+      <IsHex>true</IsHex>
+      <LightCtrlType>MengT</LightCtrlType>
+      <LightCtrlName>LightCtrl1</LightCtrlName>
+    </LightCrlParaItem>
+  </LightCtrParaItems>
+</LightCrlParaManager>

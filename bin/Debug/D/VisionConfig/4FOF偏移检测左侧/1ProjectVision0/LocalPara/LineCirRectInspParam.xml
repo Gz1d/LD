@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<St_InspectImageSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LinePara>
+    <Count>0</Count>
+    <Row1s />
+    <Col1s />
+    <Row2s />
+    <Col2s />
+    <Elements />
+    <DetectHeights />
+    <Thresholds />
+    <CenterClips />
+    <OffSetPixelX>0</OffSetPixelX>
+    <OffSetPixelY>0</OffSetPixelY>
+    <OffSetPixelTh>0</OffSetPixelTh>
+  </LinePara>
+  <CirclePara>
+    <Count>0</Count>
+    <CenterRows />
+    <CenterCols />
+    <CircleRs />
+    <Elements />
+    <DetectHeights />
+    <Thresholds />
+    <Directs />
+    <StartPhis />
+    <EndPhis />
+    <OffsetPixelX>0</OffsetPixelX>
+    <OffsetPixelY>0</OffsetPixelY>
+    <OffSetPixelTh>0</OffSetPixelTh>
+    <PointOrders />
+  </CirclePara>
+  <VectorAngle0>
+    <Row>0</Row>
+    <Col>0</Col>
+    <Angle>0</Angle>
+  </VectorAngle0>
+  <NowVectorAngle>
+    <Row>0</Row>
+    <Col>0</Col>
+    <Angle>0</Angle>
+  </NowVectorAngle>
+  <InspectLinePara>
+    <Count>0</Count>
+    <Row1s />
+    <Col1s />
+    <Row2s />
+    <Col2s />
+    <Thresholds />
+    <Elements />
+    <DetectHeights />
+    <DetectWidths />
+    <DetectRegionGrays />
+  </InspectLinePara>
+  <InspectCirclePara>
+    <Count>0</Count>
+    <ListRows />
+    <ListCols />
+    <Directs />
+    <AddRs />
+    <Elements />
+    <DetectHeights />
+    <DetectWidths />
+    <Thresholds />
+    <DetectRegionGrays />
+  </InspectCirclePara>
+  <InspectRectPara>
+    <Count>0</Count>
+    <Rows />
+    <Cols />
+    <Phis />
+    <Widths />
+    <Heights />
+    <MeanGrays />
+    <DivGrays />
+    <GrayRanges />
+    <NgAreas />
+    <DarkGrayRanges />
+  </InspectRectPara>
+</St_InspectImageSetting>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<St_CirclesParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Count>2</Count>
+  <CenterRows>
+    <double>974.98044217687072</double>
+    <double>973.85714285714289</double>
+  </CenterRows>
+  <CenterCols>
+    <double>619.65430267062311</double>
+    <double>1843.0222551928784</double>
+  </CenterCols>
+  <CircleRs>
+    <double>64.871144059758677</double>
+    <double>70.969894768705927</double>
+  </CircleRs>
+  <Elements>
+    <double>32</double>
+    <double>32</double>
+  </Elements>
+  <DetectHeights>
+    <double>103</double>
+    <double>112</double>
+  </DetectHeights>
+  <Thresholds>
+    <double>35</double>
+    <double>35</double>
+  </Thresholds>
+  <Directs>
+    <string />
+    <string />
+  </Directs>
+  <StartPhis>
+    <double>6.2498363035326427</double>
+    <double>5.69286847832953</double>
+  </StartPhis>
+  <EndPhis>
+    <double>0.036625381299623783</double>
+    <double>11.780972450961723</double>
+  </EndPhis>
+  <OffsetPixelX>0</OffsetPixelX>
+  <OffsetPixelY>0</OffsetPixelY>
+  <OffSetPixelTh>0</OffSetPixelTh>
+  <PointOrders>
+    <string />
+    <string />
+  </PointOrders>
+</St_CirclesParam>

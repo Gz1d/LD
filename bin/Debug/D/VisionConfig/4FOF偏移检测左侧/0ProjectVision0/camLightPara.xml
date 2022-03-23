@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<CameraLightPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CamName>Cam1</CamName>
+  <Exposure>20267</Exposure>
+  <TriggerModel>false</TriggerModel>
+  <lightPara>
+    <LightPara>
+      <LightCtrl>LightCtrl0</LightCtrl>
+      <Panel>Panel1</Panel>
+      <LightValue>255</LightValue>
+    </LightPara>
+    <LightPara>
+      <LightCtrl>LightCtrl1</LightCtrl>
+      <Panel>Panel1</Panel>
+      <LightValue>0</LightValue>
+    </LightPara>
+  </lightPara>
+  <IsFilter>false</IsFilter>
+  <FilterC>0.5</FilterC>
+  <LineNum>1000</LineNum>
+</CameraLightPara>

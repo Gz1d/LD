@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<CaliParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <camLightPara>
+    <CamName>Cam0</CamName>
+    <Exposure>6667</Exposure>
+    <TriggerModel>false</TriggerModel>
+    <lightPara>
+      <LightPara>
+        <LightCtrl>LightCtrl1</LightCtrl>
+        <Panel>Panel0</Panel>
+        <LightValue>255</LightValue>
+      </LightPara>
+    </lightPara>
+    <IsFilter>false</IsFilter>
+    <FilterC>0.5</FilterC>
+    <LineNum>1000</LineNum>
+  </camLightPara>
+  <StartRotPt>
+    <x>417.788</x>
+    <y>171.168</y>
+    <angle>-5</angle>
+  </StartRotPt>
+  <ListRectRegion />
+  <ListPt2D />
+  <StartCaliPt>
+    <x>419.288</x>
+    <y>169.668</y>
+    <angle>0</angle>
+  </StartCaliPt>
+  <EndCaliPt>
+    <x>416.288</x>
+    <y>173.668</y>
+    <angle>0</angle>
+  </EndCaliPt>
+  <HomMat>
+    <c00>0.0021936268759809672</c00>
+    <c01>-4.8783916011916809E-07</c01>
+    <c02>-0.51758900959830068</c02>
+    <c10>1.0480277773402341E-06</c10>
+    <c11>0.0021926477798265565</c11>
+    <c12>-0.80836475571512156</c12>
+  </HomMat>
+  <AngleRange>10</AngleRange>
+  <AngleStep>10</AngleStep>
+  <IsMoveX>true</IsMoveX>
+  <IsMoveY>false</IsMoveY>
+  <caliModel>HandEyeCali</caliModel>
+  <coordi>Coordi0</coordi>
+  <describe>未定义</describe>
+  <cam>Cam0</cam>
+  <CoordiCam>Coordi0Cam0</CoordiCam>
+</CaliParam>

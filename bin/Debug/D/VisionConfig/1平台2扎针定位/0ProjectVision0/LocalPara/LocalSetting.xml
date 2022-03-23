@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<LocalSettingPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <localModel>TempTwoCircle</localModel>
+  <SearchAreaX>107</SearchAreaX>
+  <SearchAreaY>83</SearchAreaY>
+  <SearchWidth>1808</SearchWidth>
+  <SearchHeight>2401</SearchHeight>
+  <GrabPosTeach>
+    <x>608.012</x>
+    <y>55.5</y>
+    <angle>0</angle>
+  </GrabPosTeach>
+  <TeachImgLocal>
+    <Row>1408.6217011022404</Row>
+    <Col>1231.2698159328027</Col>
+    <Angle>0.0010455668062514542</Angle>
+  </TeachImgLocal>
+  <TeachCoordi>Coordi1</TeachCoordi>
+  <CoordiCam>Coordi0Cam0</CoordiCam>
+  <Offset_x_range>1</Offset_x_range>
+  <Offset_y_range>1</Offset_y_range>
+  <Offset_theta_range>1</Offset_theta_range>
+  <Offset_x>3</Offset_x>
+  <Offset_y>-4.672</Offset_y>
+  <Offset_theta>0</Offset_theta>
+  <PixelSize>1</PixelSize>
+</LocalSettingPara>

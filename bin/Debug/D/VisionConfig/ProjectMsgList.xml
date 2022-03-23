@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfProjectMsg xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>平台1扎针定位</ProjectDescribe>
+  </ProjectMsg>
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>平台2扎针定位</ProjectDescribe>
+  </ProjectMsg>
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>平台3扎针定位</ProjectDescribe>
+  </ProjectMsg>
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>平台4扎针定位</ProjectDescribe>
+  </ProjectMsg>
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>FOF偏移检测左侧</ProjectDescribe>
+  </ProjectMsg>
+  <ProjectMsg>
+    <ProjectModel>SingleCamLocal</ProjectModel>
+    <ProjectDescribe>FOF偏移检测右侧</ProjectDescribe>
+  </ProjectMsg>
+</ArrayOfProjectMsg>

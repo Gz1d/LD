@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<St_TemplateParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MatchingType>形状匹配</MatchingType>
+  <StartAngle>-50</StartAngle>
+  <EndAngle>50</EndAngle>
+  <Level>5</Level>
+  <Score>70</Score>
+  <Scale>1</Scale>
+  <MaxError>50</MaxError>
+  <CenterX>941.5209008190418</CenterX>
+  <CenterY>1289.4788038066754</CenterY>
+  <TemplateAngle>0.014032798005984559</TemplateAngle>
+  <TemplatePath>G:\项目资料\订单项目\定位标准软件\Master\align-vision\bin\Debug\D\标定参数\2\CaliPara\\LocalPara\</TemplatePath>
+  <OffsetXMax>5</OffsetXMax>
+  <OffsetXMin>-5</OffsetXMin>
+  <OffsetYMax>5</OffsetYMax>
+  <OffsetYMin>-5</OffsetYMin>
+  <Area>50</Area>
+  <ContLength>0</ContLength>
+</St_TemplateParam>

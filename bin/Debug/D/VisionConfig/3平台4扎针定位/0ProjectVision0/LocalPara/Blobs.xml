@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<St_BlobLocalParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Count>0</Count>
+  <InspectRois />
+  <MinGrays />
+  <MaxGrays />
+  <AreaMins />
+  <PixelSize>0</PixelSize>
+  <AreaMaxs />
+</St_BlobLocalParam>

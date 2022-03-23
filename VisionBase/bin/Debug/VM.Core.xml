@@ -1,0 +1,1313 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VM.Core</name>
+    </assembly>
+    <members>
+        <member name="T:VM.Core.DynamicVmIO">
+            <summary>
+            动态IO
+            </summary>
+        </member>
+        <member name="M:VM.Core.DynamicVmIO.OnVisibleChanged">
+            <summary>
+            显示修改时
+            </summary>
+        </member>
+        <member name="M:VM.Core.DynamicVmIO.OnTypeNameChanged">
+            <summary>
+            类型修改时
+            </summary>
+            <param name="oldTypeName"></param>
+        </member>
+        <member name="M:VM.Core.DynamicVmIO.OnNameChanged(System.String,VM.Core.VmIO,VM.Core.VmIO,System.Collections.Generic.List{System.Tuple{System.Int32,VM.Core.VmIO,VM.Core.VmIO}})">
+            <summary>
+            名称修改时
+            </summary>
+        </member>
+        <member name="M:VM.Core.DynamicVmIO.OnAddCollection(VM.Core.VmIOCollection)">
+            <summary>
+            增加时
+            </summary>
+            <param name="vmIOCollection"></param>
+        </member>
+        <member name="M:VM.Core.DynamicVmIO.OnRemoveCollection">
+            <summary>
+            删除时
+            </summary>
+        </member>
+        <member name="T:VM.Core.LeafIOTypeEnum">
+            <summary>
+            叶子节点IO类型
+            </summary>
+        </member>
+        <member name="T:VM.Core.CombinationIOTypeEnum">
+            <summary>
+            组合类型
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.IsReady">
+            <summary>
+            是否准备好
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.CollectionParent">
+            <summary>
+            列表容器
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmIO.RemoveSelf">
+            <summary>
+            删除自身
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.SubscriptionInfo">
+            <summary>
+            订阅信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmIO.GetSubscriptionInfo">
+            <summary>
+            获取订阅信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmIO.SetRelateIndex(VM.Core.VmIO)">
+            <summary>
+            迭代设置_relateIndex
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:VM.Core.VmIO.InitRelateIndexIO(VM.Core.VmIO)">
+            <summary>
+            初始化RelateIndexIO，懒加载用
+            </summary>
+            <param name="vmIO"></param>
+        </member>
+        <member name="M:VM.Core.VmIO.InitRelateIO(VM.Core.VmIO)">
+            <summary>
+            初始化IO，懒加载用
+            </summary>
+            <param name="vmIO"></param>
+        </member>
+        <member name="M:VM.Core.VmIO.SubscribeRelateIO_ValueChanged(VM.Core.VmIO)">
+            <summary>
+            订阅RelateIO输出值改变事件
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmIO.GetAllLeafIO(System.Collections.Generic.List{VM.Core.VmIO})">
+            <summary>
+            获取叶子IO
+            </summary>
+            <param name="ls"></param>
+            <returns></returns>
+        </member>
+        <member name="P:VM.Core.VmIO.CustomName">
+            <summary>
+            输出配置自定义名称
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmIO.visible">
+            <summary>
+            是否在界面可见
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmIO.visibleInResultTree">
+            <summary>
+            是否在模块结果树中显示
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.IsPrivate">
+            <summary>
+            是否为私有IO，比如group的LoopIndex为私有IO，只能内部模块订阅
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmIO.isReturnRelateValue">
+            <summary>
+            是否优先返回RelateIO的值
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.IsForce">
+            <summary>
+            是否需要强制订阅
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.IsPrefer">
+            <summary>
+            是否建议订阅
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.AutoSubscribe">
+            <summary>
+            是否允许自动订阅
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.CanSubscribeA">
+            <summary>
+            是否允许订阅
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.ModulePathName">
+             <summary>
+            id+ 模块名+参数名
+             </summary>
+        </member>
+        <member name="P:VM.Core.VmIO.IsOutput">
+            <summary>
+            是否为输出IO
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmIO.ClearRelation(System.Collections.Generic.List{System.Tuple{System.Int32,VM.Core.VmIO,VM.Core.VmIO}})">
+            <summary>
+            清除订阅
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmIOCollection.GetLeafIO(System.String)">
+            <summary>
+            获得叶子节点
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmIOCollection.GetAllTrunkIO(System.Collections.Generic.List{VM.Core.VmIO})">
+            <summary>
+            获取非叶子节点IO
+            </summary>
+            <param name="ios"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmIOCollection.GetAllIO(System.Collections.Generic.List{VM.Core.VmIO})">
+            <summary>
+            获取所有节点IO
+            </summary>
+            <param name="ios"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VM.Core.UserData">
+            <summary>
+            数据给到服务
+            </summary>
+        </member>
+        <member name="T:VM.Core.ModuleParam">
+            <summary>
+            数据设置到底层模块，包括算法参数和二进制数据
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmModule.ModuleDelBeforeEvent">
+            <summary>
+            模块删除前事件
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmModule.ModuleDelAfterEvent">
+            <summary>
+            模块删除后事件
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmModule.LinkDelEvent">
+            <summary>
+            连线删除事件
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.IsReady">
+            <summary>
+            模块订阅是否已完成
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.UserData">
+            <summary>
+            用户数据，UserData[KeyName] = null时，删除该key
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.Params">
+            <summary>
+            CH: 内部参数 | EN: Internal Param
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.VMControls#Interface#IVmModule#MaxConnecion">
+            <summary>
+            最大连接数
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.ParseBase(System.Xml.XmlNodeList)">
+            <summary>
+            获取基本信息
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.RefreshResultForce">
+            <summary>
+            强制刷新结果
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmModule.maxRecordCount">
+            <summary>
+            底层保存的最大历史结果数量
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.RefreshResult">
+            <summary>
+            主动获取模块结果
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ExecuteCount">
+            <summary>
+            流程执行次数
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ModuleTime">
+            <summary>
+            模块耗时
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.AlgorithmTime">
+            <summary>
+            算法耗时
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ConfigAvailable">
+            <summary>
+            权限
+            打开配置界面
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ConfigCheck">
+            <summary>
+            配置界面打开前检查，密码校验或者模块需要打开前初始化的内容
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.LoadModuleRelateIO">
+            <summary>
+            懒加载订阅关系，如果一个模块的其中一个输入需要加载，则加载整个模块的订阅，因为只有以模块为单位的订阅加载
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.ImportProcess">
+            <summary>
+            导入流程或Group时做特殊处理
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ReportResultEnable">
+            <summary>
+            结果回调使能
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.IsForbidden">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.Position">
+            <summary>
+            模块位置
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmModule.ContinuousRunEnable">
+            <summary>
+            连续运行 | 停止执行标志
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.Subscribe(VM.Core.VmIO,VM.Core.VmIO)">
+            <summary>
+            
+            </summary>
+            <param name="source">订阅方</param>
+            <param name="target">被订阅方</param>
+        </member>
+        <member name="M:VM.Core.VmModule.IsSuitable(System.String,System.String)">
+            <summary>
+            是否可订阅，如果主动订阅IO类型为string或者两者类型相同，返回true,否则返回false
+            </summary>
+            <param name="targetType">被动订阅IO类型</param>
+            <param name="sourceType">主动订阅IO类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetAllPreModule(System.Collections.Generic.List{VM.Core.VmModule})">
+            <summary>
+            获取所有前序模块，不包括父模块
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.UnSubPreModule">
+            <summary>
+            解订阅前项
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.UnSubNextModule">
+            <summary>
+            解订阅后项
+            </summary>
+            <param name="module"></param>
+        </member>
+        <member name="M:VM.Core.VmModule.UnSubModule">
+            <summary>
+            解订阅
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.GetRelatedModules">
+            <summary>
+            获取订阅模块列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.ReloadModuleData">
+            <summary>
+            模块已经存在的情况下,重新获取io参数，用于导入流程覆盖全局模块使用
+            add by zrw 20210513
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModule.GetIO(System.String)">
+            <summary>
+            从输入和输入中查找一个名为name的IO对象，输入输出默认不同名
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetInputIOWithLeafByName(System.String)">
+            <summary>
+            根据名称获得组合输入
+            </summary>
+            <param name="inputName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetPreModules">
+            <summary>
+            获取连接到本模块的连线
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetFrontParamItems">
+            <summary>
+            获取前置模块
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetFrontIOWithLeafItemsByName(System.String)">
+            <summary>
+            获得前项模块中对应类型的组合输出
+            </summary>
+            <param name="typeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetAllCombinationByType(System.String,VM.Core.VmIOCollection)">
+            <summary>
+            获得本模块指定类型的组合输出
+            </summary>
+            <param name="typeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.VMControls#Interface#IVmModule#AutoLinkData(VMControls.Interface.IVmModule)">
+            <summary>
+            自动订阅
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:VM.Core.VmModule.IsAngle(VM.Core.VmIO)">
+            <summary>
+            判断参数是否为角度意义
+            </summary>
+            <param name="outputParam"></param>
+            <param name="inputParam"></param>
+            <param name="needTotalMatch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.AutoLinkData(VMControls.Interface.IVmModule,System.Int32)">
+            <summary>
+            自动订阅
+            </summary>
+            <param name="source"></param>
+            <param name="needCheckPre">是否需要往前查</param>
+            <param name="lowerlevel">降低要求的等级</param>
+        </member>
+        <member name="M:VM.Core.VmModule.OnModuleParamChanged(System.String)">
+            <summary>
+            参数变化
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:VM.Core.VmModule.VMControls#Interface#IVmModule#SpModuleCheck(System.Object)">
+            <summary>
+            特殊模块的操作，例如分支，分支字符模块
+            </summary>
+            <param name="objParam"></param>
+        </member>
+        <member name="M:VM.Core.VmModule.ResetParam">
+            <summary>
+            重置算法参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.GetSubScribeVisible(System.Boolean)">
+            <summary>
+            获取能够订阅该模块的所有模块，一个模块IO只可能被本层和下一层和父节点订阅
+            增加参数isGlobalModule全局变量模块可被所有模块订阅 2021-05-08 zrw
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModule.RegisterHandler">
+            <summary>
+            注册监听事件
+            </summary>
+        </member>
+        <member name="P:VM.Core.IMVSGroup.IsEnableLoop">
+            <summary>
+            循环使能
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.#ctor">
+            <summary>
+            默认构造
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.#ctor(System.Object)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.#ctor(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_MODULE_INFO)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.#ctor(VM.Core.VmModuleSet,System.UInt32,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.GetNode(System.String)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="P:VM.Core.IMVSGroup.IsDynamicModu">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.LoadModules">
+            <summary>
+            加载模块，内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.LoadAssemblies">
+            <summary>
+            加载Group模块库（独立使用时调用）
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.VMControls#Interface#IVMGroup#SetIoParams">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.GetGroupIoList(VM.Core.VmIOCollection,VM.PlatformSDKCS.ImvsSdkDefine.IMVS_GROUP_IO_INFO[],System.UInt32@)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.AddFilterToList(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_GROUP_IO_INFO@,VM.Core.VmIO)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.CloseModuleInterface">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.ExportFile(System.String,System.String)">
+            <summary>
+            导出Group
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.GetDeepLevel">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.Export">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.IMVSGroup.GetLoopResult(System.Int32,System.UInt32,System.Int32,System.Int32)">
+            <summary>
+            获取循环结果，每次40条，多次获取
+            </summary>
+        </member>
+        <member name="T:VM.Core.ModuInfo">
+            <summary>
+            CH: 单个模块信息结构 | EN: Module information structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.ModuInfo.nModuleID">
+            <param name="nModuleID">CH: 模块ID | EN: Module ID</param>
+        </member>
+        <member name="F:VM.Core.ModuInfo.nProcessID">
+            <param name="nProcessID">CH: 流程ID | EN: Process ID</param>
+        </member>
+        <member name="F:VM.Core.ModuInfo.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="P:VM.Core.ModuInfo.strDisplayName">
+            <param name="strDisplayName">CH: 界面显示名称 | EN: Displayed module name</param>
+        </member>
+        <member name="P:VM.Core.ModuInfo.strModuleName">
+            <param name="strModuleName">CH: 模块名称 | EN: Module name</param>
+        </member>
+        <member name="T:VM.Core.ModuleInfoList">
+            <summary>
+            CH: 模块信息列表结构 | EN: Module information list structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.ModuleInfoList.nNum">
+            <param name="nNum">CH: 模块个数 | EN: Number of modules in list</param>
+        </member>
+        <member name="F:VM.Core.ModuleInfoList.astModuleInfo">
+            <param name="astModuleInfo">CH: 模块信息列表 | EN: Information details of a module</param>
+        </member>
+        <member name="F:VM.Core.ModuleInfoList.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.GroupModuInfo">
+            <summary>
+            CH: Group模块信息结构 | EN: Group module information structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.GroupModuInfo.nModuleID">
+            <param name="nModuleID">CH: 模块ID | EN: Module ID</param>
+        </member>
+        <member name="F:VM.Core.GroupModuInfo.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.GroupModuInfoList">
+            <summary>
+            CH: Group模块信息列表结构 | EN: Group module information list structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.GroupModuInfoList.nNum">
+            <param name="nNum">CH: 模块个数 | EN: Number of modules in list</param>
+        </member>
+        <member name="F:VM.Core.GroupModuInfoList.astModuleInfo">
+            <param name="astModuleInfo">CH: 模块信息列表 | EN: Information details of a module</param>
+        </member>
+        <member name="F:VM.Core.GroupModuInfoList.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.IntResultInfo">
+            <summary>
+            CH: 整型结果数据信息结构 | EN: Int type data structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.IntResultInfo.nValueStatus">
+            <param name="nValueStatus">CH: 单个输出参数的状态 1成功，其他值失败 | EN: Status of a single module, 1-succeeded, other values-error codes</param>
+        </member>
+        <member name="F:VM.Core.IntResultInfo.nValueNum">
+            <param name="nValueNum">CH: 模块值个数 | EN: Number of module values</param>
+        </member>
+        <member name="F:VM.Core.IntResultInfo.pIntValue">
+            <param name="pIntValue">CH: 整型数据 | EN: Integer data</param>
+        </member>
+        <member name="T:VM.Core.FloatResultInfo">
+            <summary>
+            CH: 浮点型结果数据信息结构 | EN: Float type data structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.FloatResultInfo.nValueStatus">
+            <param name="nValueStatus">CH: 单个输出参数的状态 1成功，其他值失败 | EN: Status of a single module, 1-succeeded, other values-error codes</param>
+        </member>
+        <member name="F:VM.Core.FloatResultInfo.nValueNum">
+            <param name="nValueNum">CH: 模块值个数 | EN: Number of module values</param>
+        </member>
+        <member name="F:VM.Core.FloatResultInfo.pFloatValue">
+            <param name="pFloatValue">CH: 浮点型数据 | EN: Float data</param>
+        </member>
+        <member name="T:VM.Core.StringValueInfo">
+            <summary>
+            CH: 字符串数据 | EN: String data
+            </summary>
+        </member>
+        <member name="F:VM.Core.StringValueInfo.strValue">
+            <param name="strValue">CH: 字符串数据类型 | EN: String data structure</param>
+        </member>
+        <member name="F:VM.Core.StringValueInfo.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.StringResultInfo">
+            <summary>
+            CH: 字符串型结果数据信息结构 | EN: Float type data structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.StringResultInfo.nValueStatus">
+            <param name="nValueStatus">CH: 单个输出参数的状态 1成功，其他值失败 | EN: Status of a single module, 1-succeeded, other values-error codes</param>
+        </member>
+        <member name="F:VM.Core.StringResultInfo.nValueNum">
+            <param name="nValueNum">CH: 模块值个数 | EN: Number of module values</param>
+        </member>
+        <member name="F:VM.Core.StringResultInfo.astStringValue">
+            <param name="pstStringValue">CH: 字符串型数据 | EN: String data</param>
+        </member>
+        <member name="T:VM.Core.BaseDataInfo">
+            <summary>
+            CH: 基本数据类型 | EN: Base data structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.BaseDataInfo.pData">
+            <param name="pData">CH: 实际数据 | EN: Actual data</param>
+        </member>
+        <member name="F:VM.Core.BaseDataInfo.nLen">
+            <param name="nLen">CH: 实际数据长度 | EN: Actual data size</param>
+        </member>
+        <member name="F:VM.Core.BaseDataInfo.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="P:VM.Core.BaseDataInfo.strReserved">
+            <param name="strReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.ImageResultInfo">
+            <summary>
+            CH: 图像类型结果数据信息结构 | EN: Image type data structure (Read share memory data)
+            </summary>
+        </member>
+        <member name="F:VM.Core.ImageResultInfo.nValueStatus">
+            <param name="nValueStatus">CH: 单个输出参数的状态 1成功，其他值失败 | EN: Status of a single module, 1-succeeded, other values-error codes</param>
+        </member>
+        <member name="F:VM.Core.ImageResultInfo.nValueNum">
+            <param name="nValueNum">CH: 模块值个数 | EN: Number of module values</param>
+        </member>
+        <member name="F:VM.Core.ImageResultInfo.pstImageValue">
+            <param name="pstImageValue">CH: 图像数据 | EN: Image data</param>
+        </member>
+        <member name="T:VM.Core.PointsetResultInfo">
+            <summary>
+            CH: 点集类型结果数据信息结构 | EN: Pointset type data structure (Read share memory data)
+            </summary>
+        </member>
+        <member name="F:VM.Core.PointsetResultInfo.nValueStatus">
+            <param name="nValueStatus">CH: 单个输出参数的状态 1成功，其他值失败 | EN: Status of a single module, 1-succeeded, other values-error codes</param>
+        </member>
+        <member name="F:VM.Core.PointsetResultInfo.nValueNum">
+            <param name="nValueNum">CH: 模块值个数 | EN: Number of module values</param>
+        </member>
+        <member name="F:VM.Core.PointsetResultInfo.pstChunkValue">
+            <param name="pstChunkValue">CH: 点集数据 | EN: Pointset data</param>
+        </member>
+        <member name="T:VM.Core.ProcessInfo">
+            <summary>
+            CH: 流程信息结构 | EN: Process information structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.ProcessInfo.nProcessID">
+            <param name="nProcessID">CH: 流程ID | EN: Process ID</param>
+        </member>
+        <member name="F:VM.Core.ProcessInfo.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="P:VM.Core.ProcessInfo.strProcessName">
+            <param name="strProcessName">CH: 流程名称 | EN: Process name</param>
+        </member>
+        <member name="T:VM.Core.ProcessInfoList">
+            <summary>
+            CH: 流程信息列表结构 | EN: Process information list structure
+            </summary>
+        </member>
+        <member name="F:VM.Core.ProcessInfoList.nNum">
+            <param name="nNum">CH: 流程个数 | EN: The number of processes in the list</param>
+        </member>
+        <member name="F:VM.Core.ProcessInfoList.astProcessInfo">
+            <param name="astProcessInfo">CH: 流程信息列表 | EN: Process information</param>
+        </member>
+        <member name="F:VM.Core.ProcessInfoList.nReserved">
+            <param name="nReserved">CH: 保留字段 | EN: Reserved</param>
+        </member>
+        <member name="T:VM.Core.ProcedureRunPolicy">
+            <summary>
+            用户自定义流程运行策略信息结构
+            </summary>
+        </member>
+        <member name="F:VM.Core.ProcedureRunPolicy.nThreadNum">
+            <param name="nThreadNum">指定流程其执行线程数目</param>
+        </member>
+        <member name="T:VM.Core.DataType">
+            <summary>
+            数据类型枚举
+            </summary>
+        </member>
+        <member name="T:VM.Core.InOutParamInfo">
+            <summary>
+            输入输出基本参数信息结构
+            </summary>
+        </member>
+        <member name="F:VM.Core.InOutParamInfo.strParamName">
+            <param name="strParamName">CH: 参数名称 | EN: Parameter name</param>
+        </member>
+        <member name="F:VM.Core.InOutParamInfo.eDataType">
+            <param name="eDataType">CH: 数据类型 | EN: Data type</param>
+        </member>
+        <member name="T:VM.Core.AllInOutParamList">
+            <summary>
+            所有输入输出参数信息结构列表
+            </summary>
+        </member>
+        <member name="M:VM.Core.AllInOutParamList.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:VM.Core.AllInOutParamList.strParamName">
+            <param name="strParamName">CH: 参数名称 | EN: Parameter name</param>
+        </member>
+        <member name="F:VM.Core.AllInOutParamList.eDataType">
+            <param name="eDataType">CH: 数据类型 | EN: Data type</param>
+        </member>
+        <member name="F:VM.Core.AllInOutParamList.listAllParam">
+            <param name="listParam">CH: 所有参数列表 | EN: All parameter list</param>
+        </member>
+        <member name="P:VM.Core.VmModuleSet.IsForbidden">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModuleSet.LoadModules">
+            <summary>
+            加载模块
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModuleSet.GetLibs(System.String)">
+            <summary>
+            获取公共外部库路径
+            </summary>
+            <param name="libPath">Librarys.Config路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmModuleSet.SetChildRunState(System.Boolean)">
+            <summary>
+            设置子节点运行状态
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmModuleSet.SetGlobalRunState(System.Boolean)">
+            <summary>
+            设置全局模块运行状态
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.SelectedModule">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.StrModuleName">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.Name">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.#ctor(System.Object)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.CreateToModuleSet(VM.Core.ModelBase,System.String,System.UInt32,System.UInt32)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.#ctor(System.UInt32,System.String,System.Boolean)">
+            <summary>
+            内部使用（用于独立Group）
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.Init(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_PROCESS_INFO)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.ID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.ProcessTime">
+            <summary>
+            流程执行耗时
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.VMControls#Interface#IVmProcedure#CanModuleSelfExecute">
+            <summary>
+            流程内模块是否可自执行，若为false则需流程先执行一次
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.Run">
+            <summary>
+            执行一次
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.SyncRun">
+            <summary>
+            同步执行一次
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.ContinuousRunEnable">
+            <summary>
+            连续运行 | 停止执行标志
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.VMControls#Interface#IVMRun#ContinuousRunEnable">
+            <summary>
+            实际标志
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.IsGlobalRuning">
+            <summary>
+            只是为了令流程按钮变灰(内部使用)
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmProcedure.UniqueName">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.Export">
+            <summary>
+            流程Export为同步方法，里面加了等待（内部使用）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmProcedure.ExportFile(System.String,System.String)">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.ImportProcess(System.String,System.String)" -->
+        <member name="M:VM.Core.VmProcedure.ExportProcess(System.String,System.String)">
+            <summary>
+            导出流程
+            </summary>
+            <param name="strPath">流程路径</param>
+            <param name="strPassword">流程密码</param>
+        </member>
+        <member name="M:VM.Core.VmProcedure.SetContinousRunInterval(System.UInt32)">
+            <summary>
+            设置流程时间间隔
+            </summary>
+            <param name="nInterval">时间间隔(ms)</param>
+        </member>
+        <member name="P:VM.Core.VmProcedure.IsEnabled">
+            <summary>
+            流程禁用/启用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.Run(System.String,System.UInt32@)">
+            <summary>
+            执行一次带执行次数
+            </summary>
+            <param name="strCommand">触发字符串</param>
+            <param name="nExecuteCount">执行次数</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetAllModuleList" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetIntOutputResult(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetFloatOutputResult(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetStringOutputResult(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetImageOutputResult(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmProcedure.GetPointsetOutputResult(System.String)" -->
+        <member name="M:VM.Core.VmProcedure.SetProcedureRunPolicy(VM.Core.ProcedureRunPolicy)">
+            <summary>
+            设置流程运行策略
+            </summary>
+            <param name="stPrcRunPolicy">运行策略信息</param>
+        </member>
+        <member name="M:VM.Core.VmProcedure.SaveCalibData">
+            <summary>
+            把一键标定引导数据存储到userdata
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.LoadProcedureRelateIO">
+            <summary>
+            加载流程的订阅关系
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmProcedure.SubscribeForProcedure(VM.Core.VmIO,VM.Core.VmIO)">
+            <summary>
+            流程订阅逻辑:走流程结果配置接口
+            </summary>
+            <param name="vmIO"></param>
+            <param name="relateIO"></param>
+        </member>
+        <member name="M:VM.Core.VmProcedure.UnSubscribeForProcedure(VM.Core.VmIO,VM.Core.VmIO)">
+            <summary>
+            流程订阅逻辑:走流程结果配置接口
+            </summary>
+            <param name="vmIO"></param>
+            <param name="relateIO"></param>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnSolutionLoadProgressCallBack">
+            <summary>
+            模块方案加载进度
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution.AllModules">
+            <summary>
+            所有生成的模块，包含流程和组模块
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.InternalContinousRunEnable">
+            <summary>
+            辅助标志，由单独运行流程导致
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.ContinuousRunEnable">
+            <summary>
+            连续运行 | 停止执行标志
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.ID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.IsOnExecuteAfterLoad">
+            <summary>
+            是否正在静默执行
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.SilentExecute(System.Boolean)">
+            <summary>
+            静默执行，在OnExecuteAfterLoad中需要调用，否则出错
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution._cameraNum">
+            <summary>
+            相机数量
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution._RemainTime">
+            <summary>
+            加密狗剩余时间(小时数)
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.MemeryUsed">
+            <summary>
+            内存使用率
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.CPUUsed">
+            <summary>
+            CPU使用率
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.NetUsed">
+            <summary>
+            网络使用率
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MModuleManager_OnReportModuleStatusCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_REPORT_MODULE_STATUS_INFO_LIST)">
+            <summary>
+            模块状态
+            </summary>
+            <param name="reportModuleStatusInfo"></param>
+        </member>
+        <member name="M:VM.Core.VmSolution.VMControls#Interface#IVmSolution#GetAllModulePathList">
+            <summary>
+            返回路径列表(内部使用)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VM.Core.VmSolution.VMControls#Interface#IVmSolution#ResetAllModulesCallBackStatus">
+            <summary>
+            重置所有模块回调状态
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.VMControls#Interface#IVmSolution#CloseAllModulesCallBack">
+            <summary>
+            关闭全部模块回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.VMControls#Interface#IVmSolution#CreatNewInstance">
+            <summary>
+            新建方案(内部使用)
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.StartNewInstance">
+            <summary>
+            启动新建方案(内部使用)
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.GetSolutionTakeState">
+            <summary>
+            (内部使用)
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.RaiseGroupSubModuleValueChanged(VM.Core.IMVSGroup)">
+            <summary>
+            循环结束后，group内普通模块发出ValueChanged事件
+            </summary>
+            <param name="group"></param>
+        </member>
+        <member name="M:VM.Core.VmSolution.MProcessManager_OnProcessImportBeginCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_PROCESS_BEGIN_INFO)">
+            <summary>
+            流程导入开始回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MProcessManager_OnProcessImportProgressCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_PROCESS_PROGRESS_INFO)">
+            <summary>
+            流程导入进度回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MProcessManager_OnProcessImportUiDataCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_PROCESS_GET_UIDATA_INFO)">
+            <summary>
+            流程导入UI数据回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MProcessManager_OnProcessImportEndCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_PROCESS_END_INFO)">
+            <summary>
+            流程导入结束回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MModuleManager_OnImportGroupBeginCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_GROUP_BEGIN_INFO)">
+            <summary>
+            Group导入开始回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MModuleManager_OnImportGroupProcessCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_GROUP_PROGRESS_INFO)">
+            <summary>
+            Group导入进度回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MModuleManager_OnImportGroupUiDataCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_GROUP_GET_UIDATA_INFO)">
+            <summary>
+            Group导入UI数据回调
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution.mbImportGroupEndFlag">
+            <summary>
+            组模块加载完成标记
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution.importGroupModuleSet">
+            <summary>
+            正在加载的Group的上级
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.MModuleManager_OnImportGroupEndCallBack(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_IMPORT_GROUP_END_INFO)">
+            <summary>
+            Group导入结束回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.ModifyImportGroup(VM.Core.IMVSGroup)">
+            <summary>
+            导入Group时特殊处理
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.ImportFile">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.LoadModules">
+            <summary>
+            加载流程(内部使用)
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.LoadProcedures(VM.Core.VmModuleCollection{VM.Core.VmModule})">
+            <summary>
+            加载流程
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.LoadGlobleModules(VM.Core.VmModuleCollection{VM.Core.VmModule},System.Boolean)">
+            <summary>
+            加载全局模块(内部使用)
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.SolutionPath">
+            <summary>
+            方案路径
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.SolutionPassword">
+            <summary>
+            方案密码(内部使用)
+            </summary>
+        </member>
+        <member name="P:VM.Core.VmSolution.IsHasPassword">
+            <summary>
+            当前方案路径是否包含密码
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.Import(System.String,System.String)">
+            <summary>
+            导入方案
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.CreatSolInstance">
+            <summary>
+            创建空方案
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.CreatSolInstanceForIndependentGroup">
+            <summary>
+            创建空方案For独立Group
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.CreateIndependentGroup(System.UInt32,System.String)">
+            <summary>
+            创建流程For独立Group
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.Export(System.String,System.String,System.Boolean)">
+            <summary>
+            保存方案
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.Export(System.String,System.Boolean)">
+            <summary>
+            保存方案
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.HasPassword(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.GetSolutionVersion(System.String,System.String)" -->
+        <member name="M:VM.Core.VmSolution.CloseSolution">
+            <summary>
+            关闭方案
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.DeleteOneProcedure(System.String)">
+            <summary>
+            删除流程
+            </summary>
+            <param name="strProcedureName">流程名</param>
+        </member>
+        <member name="P:VM.Core.VmSolution.BaseHandle">
+            <summary>
+            内部使用
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.DisableModulesCallback">
+            <summary>
+            禁用所有模块结果回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.EnableModulesCallback">
+            <summary>
+            启用所有模块结果回调
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.IsSolModifyInfo" -->
+        <member name="M:VM.Core.VmSolution.DisableProcedure(System.String)">
+            <summary>
+            禁用一个流程
+            </summary>
+            <param name="strProcessName">流程名称</param>
+        </member>
+        <member name="M:VM.Core.VmSolution.EnableProcedure(System.String)">
+            <summary>
+            启用一个流程
+            </summary>
+            <param name="strProcessName">流程名称</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.IsProcedureDisable(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.GetAllProcedureList" -->
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.GetAllModuleList" -->
+        <member name="M:VM.Core.VmSolution.SetRunInterval(System.UInt32)">
+            <summary>
+            设置连续运行时间间隔
+            </summary>
+            <param name="nMillSecond">时间间隔</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:VM.Core.VmSolution.GetModuleCount" -->
+        <member name="F:VM.Core.VmSolution.mbGlobalRunFlag">
+            <summary>
+            全局执行事件标志
+            </summary>
+        </member>
+        <member name="F:VM.Core.VmSolution.mProcStateList">
+            <summary>
+            流程状态列表
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.SyncRun">
+            <summary>
+            同步执行一次
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnWorkStatusEvent">
+            <summary>
+            流程工作状态
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnDongleEvent">
+            <summary>
+            加密狗状态
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnSolutionLoadBeginEvent">
+            <summary>
+            开始加载方案
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnSolutionLoadEndEvent">
+            <summary>
+            方案加载结束
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnSolutionLoadProgressEvent">
+            <summary>
+            模块方案加载进度
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnServerStatusEvent">
+            <summary>
+            服务状态回调
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnProxyCrashEvent">
+            <summary>
+            代理崩溃
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnProcedureUnRegisterEvent">
+            <summary>
+            流程解注册状态信息
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnModelLoadWarnEvent">
+            <summary>
+            方案加载时模块错误警告信息
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnProcessStatusStartEvent">
+            <summary>
+            连续执行开始状态信息
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnProcessStatusStopEvent">
+            <summary>
+            连续执行结束状态信息
+            </summary>
+        </member>
+        <member name="E:VM.Core.VmSolution.OnModuleResultCallbackEvent">
+            <summary>
+            模块结果信息回调
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.Run">
+            <summary>
+            执行一次
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.Dispose">
+            <summary>
+            退出
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.ChangToProcess(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_PROCESS_INFO,System.Object)">
+            <summary>
+            加载流程
+            </summary>
+        </member>
+        <member name="M:VM.Core.VmSolution.CreateProcedure(VM.PlatformSDKCS.ImvsSdkDefine.IMVS_PROCESS_INFO,System.Object)">
+            <summary>
+            创建流程（内部使用）
+            </summary>
+        </member>
+    </members>
+</doc>

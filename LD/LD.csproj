@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB1E84BE-870F-4EFD-80AA-B3AC4C7F5ED5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LD</RootNamespace>
+    <AssemblyName>LD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet">
+      <HintPath>C:\Program Files\MVTec\HALCON-18.11-Steady\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="HslCommunication, Version=6.0.4.0, Culture=neutral, PublicKeyToken=cdb2261fa039ed67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HslCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BpLong.cs" />
+    <Compile Include="Config\business\Configbusiness.cs" />
+    <Compile Include="Config\business\Configbusiness01.cs" />
+    <Compile Include="Config\Common\Common.cs" />
+    <Compile Include="Config\Common\ConnectExcel.cs" />
+    <Compile Include="Config\Common\PlcDataItem.cs" />
+    <Compile Include="Config\Common\PlcList.cs" />
+    <Compile Include="Config\Common\ReadExcel.cs" />
+    <Compile Include="Config\Common\report0.cs" />
+    <Compile Include="Config\Common\report.cs" />
+    <Compile Include="Config\Common\SerialList.cs" />
+    <Compile Include="Config\Common\SocketList.cs" />
+    <Compile Include="Config\Common\VisionLog.cs" />
+    <Compile Include="Config\ConfigLog.cs" />
+    <Compile Include="Config\ConfigManger.cs" />
+    <Compile Include="Config\ConfigPlc.cs" />
+    <Compile Include="Config\ConfigPinReport.cs" />
+    <Compile Include="Config\ConfigReport.cs" />
+    <Compile Include="Config\ConfigSerial.cs" />
+    <Compile Include="Config\ConfigSocketC.cs" />
+    <Compile Include="Config\ConfigSocketS.cs" />
+    <Compile Include="Config\ConfigSystem.cs" />
+    <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\Serializition.cs" />
+    <Compile Include="Controls\OutlookBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OutlookBar.designer.cs">
+      <DependentUpon>OutlookBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device.cs" />
+    <Compile Include="Device\DeviceManager.cs" />
+    <Compile Include="Device\DevicePlc.cs" />
+    <Compile Include="Device\DeviceSerial.cs" />
+    <Compile Include="Device\DeviceSocketC.cs" />
+    <Compile Include="Device\DeviceSocketS.cs" />
+    <Compile Include="Device\DeviceSystem.cs" />
+    <Compile Include="Logic\business\business.cs" />
+    <Compile Include="Logic\business\business01.cs" />
+    <Compile Include="Logic\business\business02.cs" />
+    <Compile Include="Logic\LogHandle.cs" />
+    <Compile Include="Logic\PlcHandle.cs" />
+    <Compile Include="Logic\ReportHandle.cs" />
+    <Compile Include="Logic\SerialHandle.cs" />
+    <Compile Include="Logic\SocketCHandle.cs" />
+    <Compile Include="Logic\SocketSHandle.cs" />
+    <Compile Include="Logic\SystemHandle.cs" />
+    <Compile Include="Logic\UiHandle.cs" />
+    <Compile Include="log\LogWriter.cs" />
+    <Compile Include="log\Runlog.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socket\Client.cs" />
+    <Compile Include="Socket\Server.cs" />
+    <Compile Include="Ui\frmImportPlc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmImportPlc.designer.cs">
+      <DependentUpon>frmImportPlc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\frmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmLog.designer.cs">
+      <DependentUpon>frmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\frmSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmSerial.designer.cs">
+      <DependentUpon>frmSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\frmSiemens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmSiemens.designer.cs">
+      <DependentUpon>frmSiemens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\frmSocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\frmSocket.designer.cs">
+      <DependentUpon>frmSocket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\OutlookBar.resx">
+      <DependentUpon>OutlookBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ui\frmImportPlc.resx">
+      <DependentUpon>frmImportPlc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmLog.en.resx">
+      <DependentUpon>frmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmLog.resx">
+      <DependentUpon>frmLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmReport.en.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmSerial.en.resx">
+      <DependentUpon>frmSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmSerial.resx">
+      <DependentUpon>frmSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmSiemens.resx">
+      <DependentUpon>frmSiemens.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\frmSocket.resx">
+      <DependentUpon>frmSocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\LD.Config.ConfigFeature.datasource" />
+    <None Include="Properties\DataSources\LD.Config.ConfigReport.datasource" />
+    <None Include="Properties\DataSources\LD.Config.ConfigSystem.datasource" />
+    <None Include="Properties\DataSources\LD.Config.Feature.datasource" />
+    <None Include="Properties\DataSources\LD.Config.MachineVision.datasource" />
+    <None Include="Properties\DataSources\LD.Config.PlcDataItem.datasource" />
+    <None Include="Properties\DataSources\LD.Config.report.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionItem1.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionItem2.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionItem3.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionLog.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionParameter.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionParameter1.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionParameterGet.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionParameterSet.datasource" />
+    <None Include="Properties\DataSources\LD.Config.VisionResult.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\alarm-116.png" />
+    <Content Include="Resources\alarm-132.png" />
+    <Content Include="Resources\alarm.gif" />
+    <Content Include="Resources\alarm16.png" />
+    <Content Include="Resources\alarm32.png" />
+    <Content Include="Resources\AttachmentObject_16x16.png" />
+    <Content Include="Resources\black.png" />
+    <Content Include="Resources\BO_Feeds.png" />
+    <Content Include="Resources\BO_Feeds_Large.png" />
+    <Content Include="Resources\BO_Task.png" />
+    <Content Include="Resources\BO_Task_Large.png" />
+    <Content Include="Resources\Close_16x16.png" />
+    <Content Include="Resources\Close_32x32.png" />
+    <Content Include="Resources\Completed_16x16.png" />
+    <Content Include="Resources\Completed_32x32.png" />
+    <Content Include="Resources\Contact_16x16.png" />
+    <Content Include="Resources\Contact_32x32.png" />
+    <Content Include="Resources\Contact_Us.png" />
+    <Content Include="Resources\Custom_Flag.png" />
+    <Content Include="Resources\Delete_16x16.png" />
+    <Content Include="Resources\Delete_32x32.png" />
+    <Content Include="Resources\Doctor.png" />
+    <Content Include="Resources\EditContact_16x16.png" />
+    <Content Include="Resources\EditContact_32x32.png" />
+    <Content Include="Resources\EditFeed_16x16.png" />
+    <Content Include="Resources\EditFeed_32x32.png" />
+    <Content Include="Resources\EditModel.ico" />
+    <Content Include="Resources\EditTask_16x16.png" />
+    <Content Include="Resources\EditTask_32x32.png" />
+    <Content Include="Resources\Forward.png" />
+    <Content Include="Resources\green.png" />
+    <Content Include="Resources\High16x16.png" />
+    <Content Include="Resources\Important_16x16.png" />
+    <Content Include="Resources\info-16x16.png" />
+    <Content Include="Resources\info-32x32.png" />
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+    <Content Include="Resources\LayoutRotate_16x16.png" />
+    <Content Include="Resources\LayoutRotate_32x32.png" />
+    <Content Include="Resources\ListByDate_32x32.png" />
+    <Content Include="Resources\List_32x32.png" />
+    <Content Include="Resources\Low16x16.png" />
+    <Content Include="Resources\Mail_16x16.png" />
+    <Content Include="Resources\Mail_32x32.png" />
+    <Content Include="Resources\Miss.png" />
+    <Content Include="Resources\Mr.png" />
+    <Content Include="Resources\Mrs.png" />
+    <Content Include="Resources\Ms.png" />
+    <Content Include="Resources\MultiplePagesLarge.png" />
+    <Content Include="Resources\NavigationBar_16x16.png" />
+    <Content Include="Resources\NavigationBar_32x32.png" />
+    <Content Include="Resources\NewContact_16x16.png" />
+    <Content Include="Resources\NewContact_32x32.png" />
+    <Content Include="Resources\NewFeed_16x16.png" />
+    <Content Include="Resources\NewFeed_32x32.png" />
+    <Content Include="Resources\NewMail_16x16.png" />
+    <Content Include="Resources\NewMail_32x32.png" />
+    <Content Include="Resources\NewTask_16x16.png" />
+    <Content Include="Resources\NewTask_32x32.png" />
+    <Content Include="Resources\NextWeek_Flag.png" />
+    <Content Include="Resources\NoDate_Flag.png" />
+    <Content Include="Resources\normal.png" />
+    <Content Include="Resources\note-16x16.png" />
+    <Content Include="Resources\note-32x32.png" />
+    <Content Include="Resources\Olympus Camedia 3020.ico" />
+    <Content Include="Resources\Online_Help.png" />
+    <Content Include="Resources\openImg.png" />
+    <Content Include="Resources\openPrj.png" />
+    <Content Include="Resources\Overdue_32x32.png" />
+    <Content Include="Resources\Owner.png" />
+    <Content Include="Resources\PageOrientationPortrait.png" />
+    <Content Include="Resources\PrintDirectLarge.png" />
+    <Content Include="Resources\Prioritized_32x32.png" />
+    <Content Include="Resources\Priority_16x16.png" />
+    <Content Include="Resources\Professor.png" />
+    <Content Include="Resources\reading.png" />
+    <Content Include="Resources\red.png" />
+    <Content Include="Resources\Refresh_16x16.png" />
+    <Content Include="Resources\Refresh_32x32.png" />
+    <Content Include="Resources\Reply.png" />
+    <Content Include="Resources\ReplyAll.png" />
+    <Content Include="Resources\ResetToDefault_16x16.png" />
+    <Content Include="Resources\SaveAll_32x32.png" />
+    <Content Include="Resources\saveAs.png" />
+    <Content Include="Resources\saveprj.png" />
+    <Content Include="Resources\saveProject.png" />
+    <Content Include="Resources\Save_16x16.png" />
+    <Content Include="Resources\Save_32x32.png" />
+    <Content Include="Resources\Search.png" />
+    <Content Include="Resources\Setting.png" />
+    <Content Include="Resources\SortAsc_32x32.png" />
+    <Content Include="Resources\TableStyle.png" />
+    <Content Include="Resources\test.png" />
+    <Content Include="Resources\ThisWeek_Flag.png" />
+    <Content Include="Resources\Today_16x16.png" />
+    <Content Include="Resources\Today_32x32.png" />
+    <Content Include="Resources\Today_Flag.png" />
+    <Content Include="Resources\ToDoList_32x32.png" />
+    <Content Include="Resources\Tomorrow_Flag.png" />
+    <Content Include="Resources\Undo_16x16.png" />
+    <Content Include="Resources\Undo_32x32.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\video.png" />
+    <Content Include="Resources\white.png" />
+    <Content Include="Resources\公司名称.png" />
+    <Content Include="Resources\关于.jpg" />
+    <Content Include="Resources\联得装备.png" />
+    <Content Include="Res\Black.ico" />
+    <Content Include="Res\down.png" />
+    <Content Include="Res\left.png" />
+    <Content Include="Res\left_rotate.png" />
+    <Content Include="Res\Red.ico" />
+    <Content Include="Res\right.png" />
+    <Content Include="Res\right_rotate.png" />
+    <Content Include="Res\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

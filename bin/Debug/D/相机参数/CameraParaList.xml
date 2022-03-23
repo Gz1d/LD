@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ArrayOfCameraPara xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CameraPara>
+    <TriggerModel>false</TriggerModel>
+    <IsMirrorX>true</IsMirrorX>
+    <IsMirrorY>true</IsMirrorY>
+    <IsRot>true</IsRot>
+    <CameraName>Cam0</CameraName>
+    <CameInterface>HMV3rdParty</CameInterface>
+    <CamDecribe>LocalCamera</CamDecribe>
+    <IsActive>true</IsActive>
+    <IsOpen>false</IsOpen>
+  </CameraPara>
+  <CameraPara>
+    <TriggerModel>false</TriggerModel>
+    <IsMirrorX>false</IsMirrorX>
+    <IsMirrorY>false</IsMirrorY>
+    <IsRot>false</IsRot>
+    <CameraName>Cam1</CameraName>
+    <CameInterface>HMV3rdParty</CameInterface>
+    <CamDecribe>UpCamera</CamDecribe>
+    <IsActive>true</IsActive>
+    <IsOpen>true</IsOpen>
+  </CameraPara>
+  <CameraPara>
+    <TriggerModel>false</TriggerModel>
+    <IsMirrorX>true</IsMirrorX>
+    <IsMirrorY>false</IsMirrorY>
+    <IsRot>false</IsRot>
+    <CameraName>Cam2</CameraName>
+    <CameInterface>HMV3rdParty</CameInterface>
+    <CamDecribe>DnCamra</CamDecribe>
+    <IsActive>true</IsActive>
+    <IsOpen>true</IsOpen>
+  </CameraPara>
+</ArrayOfCameraPara>

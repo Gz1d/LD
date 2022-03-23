@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VMControls.WPF.Release</name>
+    </assembly>
+    <members>
+        <member name="T:VMControls.WPF.Release.Front.BooleanParamControl">
+            <summary>
+            BooleanParamControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BooleanParamControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.BooleanParamControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.CalculatorParamControl">
+            <summary>
+            CalculatorParamControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            CalculatorParamControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.CalculatorParamControl.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+             <summary>
+            高永远为自动
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.CalculatorParamControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.CommandButton">
+            <summary>
+            CommandButton.xaml 的交互逻辑
+            </summary>
+            <summary>
+            CommandButton
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.CommandButton.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.Controller">
+            <summary>
+            Controller.xaml 的交互逻辑
+            </summary>
+            <summary>
+            Controller
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.Controller.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.GroupBox.FitSize">
+            <summary>
+            控件自适应
+            </summary>
+        </member>
+        <member name="F:VMControls.WPF.Release.Front.GroupBox._size">
+            <summary>
+            默认尺寸
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.GroupBox.Size">
+            <summary>
+            尺寸
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.GroupBox.IsNeedLoadOrUnLoad">
+            <summary>
+            用于判断是否是切换tab页触发的Unload事件
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.ImageControl">
+            <summary>
+            FrontImageControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            ImageControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.ImageControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.Label">
+            <summary>
+            Label.xaml 的交互逻辑
+            </summary>
+            <summary>
+            Label
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.Label.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.MultiImageControl">
+            <summary>
+            MultiImageControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            MultiImageControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.MultiImageControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.NumbericParamControl">
+            <summary>
+            NumbericParamControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            NumbericParamControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.NumbericParamControl.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+             <summary>
+            高永远为自动
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.NumbericParamControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.OKNGControl">
+            <summary>
+            OKNGControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            OKNGControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.OKNGControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.PicBox">
+            <summary>
+            PicBox.xaml 的交互逻辑
+            </summary>
+            <summary>
+            PicBox
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.PicBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.SignalStatusLightControl">
+            <summary>
+            SignalStatusLightControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SignalStatusLightControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.SignalStatusLightControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.StringParamControl">
+            <summary>
+            StringParamControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            StringParamControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.StringParamControl.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>
+            高设为自动
+            </summary>
+            <param name="sizeInfo"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.StringParamControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.SubWindow">
+            <summary>
+            SubWindow.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SubWindow
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.SubWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:VMControls.WPF.Release.Front.Tab._iTab_SelectionChangedTimes">
+            <summary>
+            选择变化次数
+            首次加载时触发一次，后续Tab页切换次数累加
+            用于内部控件触发load事件标识
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.Tab.IsNeedLoadOrUnLoad">
+            <summary>
+            用于判断是否是切换tab页触发的Unload事件
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.Tab.FitSize">
+            <summary>
+            控件自适应
+            </summary>
+        </member>
+        <member name="F:VMControls.WPF.Release.Front.Tab._size">
+            <summary>
+            默认尺寸
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.Tab.Size">
+            <summary>
+            尺寸
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.Tab.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>
+            尺寸变化事件
+            </summary>
+            <param name="sizeInfo"></param>
+        </member>
+        <member name="P:VMControls.WPF.Release.Front.TabColumnItem.TabItemForeground">
+            <summary>
+            字体色
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.StyleHelper.OverrideMetadata(System.Windows.DependencyProperty,System.Type)">
+            <summary>
+            重载样式
+            </summary>
+            <param name="styleProperty">样式属性</param>
+            <param name="controlType">控件类型</param>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.TableControl">
+            <summary>
+            TableControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TableControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.TableControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Front.WorkStatusControl">
+            <summary>
+            WorkStatusControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WorkStatusControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.Front.WorkStatusControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmMainViewConfigControl">
+            <summary>
+            VMMainViewControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmMainViewConfigControl
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmMainViewConfigControl.IsLockWorkArea">
+            <summary>
+            是否锁定工作区
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmMainViewConfigControl.IsOpenParams">
+            <summary>
+            是否打开参数列表（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnExecuteAfterLoadFinally(System.Object,System.EventArgs)">
+            <summary>
+            静默执行结束（内部使用）
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnExecuteAfterLoadStart(System.Object,System.EventArgs)">
+            <summary>
+            静默执行开始（内部使用）
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnSolutionLoadProgressCallBack(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            加载进度（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnEndCallBack(System.Object,Apps.UIHelper.Extern.EndEventArgs)">
+            <summary>
+            结束回调（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnAddProcess(VMControls.Interface.IVmProcedure,System.Object)">
+            <summary>
+            增加流程（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnProcedureUnRegister(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            流程解注册（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnSolutionLoadBeginCallBack(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            开始加载（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.VmSolution_OnModelLoadWarn(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            警告回调（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.BindSingleProcedure(System.String)">
+            <summary>
+            根据流程名称绑定单流程
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.BindMultiProcedure">
+            <summary>
+            绑定多流程
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.LockWorkArea">
+            <summary>
+            锁定工作区
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.UnlockWorkArea">
+            <summary>
+            解除锁定工作区
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmMainViewConfigControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmParamsConfigControl">
+            <summary>
+            ParamsConfigControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmParamsConfigControl
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmParamsConfigControl.ParamsConfig">
+            <summary>
+            绑定模块参数
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigControl.ImportIndependentGroup(System.String,System.String)">
+            <summary>
+            加载独立Group方案（COM组件）
+            </summary>
+            <param name="shape"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigControl.ImportSol(System.String,System.String)">
+            <summary>
+            加载方案（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigControl.BindParamById(System.UInt32)">
+            <summary>
+            根据模块ID绑定参数配置控件（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmFrontendControl">
+            <summary>
+            VmFrontendControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmFrontendControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmFrontendControl.LoadFrontendSource">
+            <summary>
+            加载运行界面
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmFrontendControl.AutoChangeSize">
+            <summary>
+            主动自适应大小
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmFrontendControl.GetBaseHandle">
+            <summary>
+            初始化（COM）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmFrontendControl.LoadSol(System.String,System.String)">
+            <summary>
+            加载方案（COM）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmFrontendControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmGlobalToolControl">
+            <summary>
+            VmGlobalToolControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmGlobalToolControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmGlobalToolControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmGlobalToolControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmParamsConfigWithRenderControl">
+            <summary>
+            VmParamsConfigWithRenderControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmParamsConfigWithRenderControl
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ModuleSource">
+            <summary>
+            绑定模块
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ImageSource">
+            <summary>
+            绑定图像数据
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ParamsConfig">
+            <summary>
+            绑定模块参数
+            </summary>
+        </member>
+        <member name="P:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ROIVisible">
+            <summary>
+            是否显示ROI
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.UpdateView">
+            <summary>
+            刷新
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.DrawShape(System.Object)">
+            <summary>
+            设置图形
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.SetBackgroundImage(VMControls.Interface.IVmIO)">
+            <summary>
+            设置背景图
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ImportIndependentGroup(System.String,System.String)">
+            <summary>
+            加载独立Group方案（COM组件）
+            </summary>
+            <param name="shape"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.ImportSol(System.String,System.String)">
+            <summary>
+            加载方案（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.BindParamById(System.UInt32)">
+            <summary>
+            根据模块ID绑定参数配置控件（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.DrawCppShapes(System.Object)">
+            <summary>
+            添加图形供cpp接口调用（COM组件）
+            </summary>
+            <param name="shape"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmParamsConfigWithRenderControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmProcedureConfigControl">
+            <summary>
+            VmProcedureConfigControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmProcedureConfigControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.InitControl">
+            <summary>
+            控件初始化操作（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.VmSolution_OnExecuteAfterLoad(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            是否静默执行（内部使用）
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.VmSolution_OnEndCallBack(System.Object,Apps.UIHelper.Extern.EndEventArgs)">
+            <summary>
+            结束回调（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.VmSolution_OnModelLoadWarn(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            警告回调（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.VmSolution_OnProcedureUnRegister(System.Object,Apps.UIHelper.Extern.ObjectEventArgs)">
+            <summary>
+            流程解注册（内部使用）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.BindSingleProcedure(System.String)">
+            <summary>
+            根据流程名称绑定单流程
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.BindMultiProcedure">
+            <summary>
+            绑定多流程
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.LockWorkArea">
+            <summary>
+            锁定工作区
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.UnlockWorkArea">
+            <summary>
+            解除锁定工作区
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmProcedureConfigControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VMControls.WPF.Release.VmRenderControl">
+            <summary>
+            VmRenderControl.xaml 的交互逻辑
+            </summary>
+            <summary>
+            VmRenderControl
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmRenderControl.DrawCppShapes(System.Object)">
+            <summary>
+            添加图形供cpp接口调用（COM组件）
+            </summary>
+            <param name="shape"></param>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmRenderControl.GetBaseHandle">
+            <summary>
+            初始化（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmRenderControl.BindRenderById(System.UInt32)">
+            <summary>
+            根据模块ID绑定参数配置控件（COM组件）
+            </summary>
+        </member>
+        <member name="M:VMControls.WPF.Release.VmRenderControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
